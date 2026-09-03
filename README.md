@@ -4,7 +4,6 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Claude Code Skill](https://img.shields.io/badge/Claude%20Code-Skill-6b5bd6)](https://claude.com/claude-code)
-[![Made for](https://img.shields.io/badge/Made%20for-취업준비생-orange)](#)
 
 [Claude Code](https://claude.com/claude-code)에서 동작하는 skill입니다. 경험을 정리해달라고
 자유롭게 말하면, 이야기 속 정량화 가능한 수치를 뽑아내고, 애매한 부분은 되물어서
@@ -22,6 +21,7 @@
 그걸 스스로 되짚어 숫자로 표현하는 건 생각보다 어렵습니다. 이 skill은
 그 되짚는 과정을 대신 진행해줍니다.
 
+
 ## 무엇을 하는가
 
 - 📝 **자유 서술 인식** — 형식 없이 편하게 이야기해도 됨
@@ -32,6 +32,7 @@
 - 🗂️ **경험 뱅크 누적** — `experiences.md`에 계속 쌓아서, 자소서 문항이나 면접 질문에 맞는 경험을 나중에 검색·재사용
 
 > 정보를 지어내지 않습니다. 말하지 않은 숫자는 절대 임의로 채우지 않고, 없으면 없다고 그대로 기록합니다.
+
 
 ## 예시
 
@@ -57,6 +58,7 @@
 
 이 정도로 구체화되기까지, 스킬이 "팔로워가 몇 명에서 몇 명으로 늘었나요?", "꾸준히 올렸다는 게 주에 몇 번인가요?" 같은 질문 1~2개를 순서대로 던져서 답을 유도합니다.
 
+
 ## 설치
 
 **프로젝트 전용으로 쓰기** (해당 프로젝트에서만 인식):
@@ -74,9 +76,10 @@ git clone https://github.com/sueheo/star-experience-organizer.git
 cp -r star-experience-organizer/.claude/skills/star-experience-organizer ~/.claude/skills/
 ```
 
+
 ## 사용법
 
-Claude Code에서 아래처럼 말을 걸면 스킬이 자동으로 인식됩니다.
+Claude Code/Codex에서 아래처럼 말을 걸면 스킬이 자동으로 인식됩니다.
 
 ```
 /star-experience-organizer
@@ -88,6 +91,7 @@ Claude Code에서 아래처럼 말을 걸면 스킬이 자동으로 인식됩니
 정리된 경험은 작업 중인 디렉터리의 `experiences.md`에 계속 쌓입니다.
 이후 "이 자소서 문항에 맞는 경험 찾아줘"처럼 요청하면 쌓인 경험 중에서 태그·키워드로 매칭해줍니다.
 
+
 ## 작동 방식
 
 1. **날것의 이야기 받기** — 형식 요구 없이 자유롭게
@@ -96,6 +100,7 @@ Claude Code에서 아래처럼 말을 걸면 스킬이 자동으로 인식됩니
 4. **정량화 공백 확인** — Result 우선, 그다음 Action. 한 번에 1~2개만 되묻기
 5. **역량 태깅 확인**
 6. **`experiences.md`에 저장**
+
 
 ## 구성 파일
 
@@ -106,6 +111,7 @@ Claude Code에서 아래처럼 말을 걸면 스킬이 자동으로 인식됩니
 | `assets/star_entry_template.md` | 경험 뱅크 저장용 항목 템플릿 |
 
 > `experiences.md`(실제로 정리한 개인 경험 데이터)는 `.gitignore`에 포함되어 저장소에 올라가지 않습니다.
+
 
 ## 라이선스
 
